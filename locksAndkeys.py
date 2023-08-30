@@ -33,12 +33,9 @@ while not youwin:
     if allLocks[inpLockIndex][0][1] == allKeys[myPosition][i][1]:
       if myPosition == inpLockIndex:
         youwin = True
-      allLocks[inpLockIndex] = ["  "]
       gainedKey  = allKeys[inpLockIndex]
-      allKeys[inpLockIndex] = ["  "]
-      allKeys[myPosition] = allKeys[myPosition] + gainedKey
-      allLocks[myPosition].append("  ")
-      measure[myPosition] = measure[myPosition]+"      "
+      allKeys[inpLockIndex] = allKeys[myPosition]
+      allKeys[myPosition] = gainedKey
 
       hasCorrectKey = True
   if hasCorrectKey == False:
