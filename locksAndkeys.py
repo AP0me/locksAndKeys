@@ -55,6 +55,7 @@ while not youwin and not quits:
     input("Press Enter to: Switch to player1")
   else:
     print("WTF")
+  print("\n"*20)
   
 
   print(measure , ": Indexes")
@@ -91,6 +92,9 @@ while not youwin and not quits:
         gainedKey  = allKeys[inpLockIndex]
         allKeys[inpLockIndex] = allKeys[playerPosition]
         allKeys[playerPosition] = gainedKey
+        print(measure , ": Indexes")
+        print(allLocks, ": Locks")
+        print(allKeys , ": Keys ")
       break
 
   if quits:
